@@ -34,7 +34,6 @@ const WelcomeSection = ({
       const difference = anniversaryDate.getTime() - now.getTime();
 
       if (difference > 0) {
-        setIsLocked(false);
         setTimeLeft({
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
